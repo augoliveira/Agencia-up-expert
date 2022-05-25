@@ -15,9 +15,6 @@ const DarkTheme = ({ children }) => {
         <link rel="stylesheet" href="/assets/orçamento/css/mqueries.css" />
         <link rel="stylesheet" href="/assets/orçamento/css/normalize.css" />
         <link rel="stylesheet" href="/assets/orçamento/css/animate.css" />
-	      <link rel="stylesheet" href="/lib/selectFx/cs-select.css"/>
-	      <link rel="stylesheet" href="/lib/selectFx/cs-skin-border.css"/>
-        <link rel="stylesheet" href="/lib/selectFx/cs-skin-border.css"/>
       </Head>
       {children}
     </>

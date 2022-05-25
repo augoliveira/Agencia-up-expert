@@ -1,5 +1,6 @@
 
 import React from "react";
+import Image from 'next/image'
 import Link from "next/link";
 import Split from "../../components/Split";
 import DarkTheme from "../../layouts/Dark";
@@ -13,6 +14,10 @@ import Typewriter from "typewriter-effect";
 const Demos = () => {
   const fixedHeader = React.useRef(null);
   const MainContent = React.useRef(null);
+
+  const myLoader = ({ src, width, quality }) => {
+    return `https://example.com/${src}?w=${width}&q=${quality || 75}`
+  }
 
   React.useEffect(() => {
     setInterval(() => {
@@ -66,7 +71,6 @@ const Demos = () => {
           .masonery .item-img:hover .tlinks {
             opacity: 1;
           }
-
           .masonery .item-img .tlinks {
             position: absolute;
             top: 0;
@@ -78,7 +82,6 @@ const Demos = () => {
             opacity: 0;
             padding: 0 40px;
           }
-
           .masonery .item-img .tlinks a {
             padding: 14px 20px;
             border-radius: 5px;
@@ -88,7 +91,6 @@ const Demos = () => {
             font-weight: 500;
             margin: 5px 0;
           }
-
           .masonery .item-img .tlinks a:last-of-type {
             background: #75dab4;
             color: #181b21;
@@ -111,11 +113,14 @@ const Demos = () => {
       <header
         ref={fixedHeader}
         className="works-header fixed-slider hfixd valign bg-img"
-        style={{backgroundImage: `url(${bg.src}) `,
-        width: '100%',
-        height: '100%', }}
         data-overlay-dark="4" 
       >
+        <div className={'image-container'}>
+          <Image src={bg.src} layout="fill"
+          objectFit="cover"
+          quality={100} alt={'image'} />
+        </div>
+  
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-9 col-md-11 static">

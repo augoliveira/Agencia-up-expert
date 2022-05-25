@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }:AppProps) {
   return (
     <>
       <Head>
-        <title>Agência full service | up.expert</title>
+        <title>Agência de Marketing Digital: Full Service | up.Expert</title>
         <link rel="icon" href="/img/favicon.ico" />
         
       </Head>
@@ -41,22 +41,12 @@ function MyApp({ Component, pageProps }:AppProps) {
         id="isotope"
         strategy="beforeInteractive"
         src="/js/isotope.pkgd.min.js"
-       />
-      <Script id="initWow" strategy="lazyOnload">{`new WOW().init();`}</Script>
-      <Script
-  strategy="afterInteractive"
-  dangerouslySetInnerHTML={{
-    __html: `
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer', 'GTM-XXXXXX');
-  `,
-  }}
-/>
-<Script src="https://connect.facebook.net/en_US/sdk.js" strategy="lazyOnload" />
-<script
+      />
+      <script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+<Script
           data-partytown-config
           dangerouslySetInnerHTML={{
             __html: `
@@ -67,9 +57,6 @@ function MyApp({ Component, pageProps }:AppProps) {
             `,
           }}
         />
-        <Script id="show-banner" strategy="lazyOnload">
-  {`document.getElementById('banner').classList.remove('hidden')`}
-</Script>
     </>
   );
 }

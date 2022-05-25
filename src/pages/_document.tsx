@@ -10,16 +10,16 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang="Pt-BR">
         <Head>
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="keywords"
-            content="HTML5 Template Avo onepage themeforest"
+            content="Somos uma Agência de Marketing Digital Full Service com uma combinação única de talentos criados para a era digital. Geramos ideias e estratégias impulsionadas pela percepção do consumidor e ampliadas por um domínio sem precedentes da tecnologia."
           />
           <meta
             name="description"
-            content="Avo - Onepage Multi-Purpose HTML5 Template"
+            content="criação de site, business intelligence, Conteúdo digitais, marketing, marketing digital, agência, vender mais, publicidade, performance"
           />
           <meta name="author" content="" />
           <link rel="shortcut icon" href="/img/favicon.ico" />

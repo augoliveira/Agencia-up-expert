@@ -29,3 +29,9 @@ module.exports = {
       nextScriptWorkers: true,
     },
   }
+  module.exports = {
+    optimizeFonts: false,
+  }
+  module.exports = {
+    compress: false,
+  }

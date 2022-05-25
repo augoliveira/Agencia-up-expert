@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ShowcassesFullScreenData from "../../data/showcases-full-screen-slider.json";
@@ -79,15 +80,22 @@ const ShowcasesOneCenter = () => {
             className="swiper-wrapper"
             slidesPerView={4}
           >
+            
             {ShowcassesFullScreenData.map((slide) => (
               <SwiperSlide key={slide.id} className="swiper-slide">
                 <div
                   className="bg-img valign"
-                  style={{
-                    backgroundImage: `url(${slide.image})`,
-                  }}
                   data-overlay-dark="1"
                 >
+                  <div className={slide.image}>
+      <Image
+        alt="travel"
+        src={slide.image}
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+      />
+</div>
                   <div className="caption ontop">
                     <div className="o-hidden">
                       <h1>
