@@ -11,12 +11,6 @@ const Services3 = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12 col-md-12">
-            <div className="sec-head">
-              <h6 className="wow fadeIn" data-wow-delay=".5s">
-                O que fazemos
-              </h6>
-              <h3 className="wow color-font">Nossos Serviços</h3>
-            </div>
           </div>
         </div>
         <div className="row">

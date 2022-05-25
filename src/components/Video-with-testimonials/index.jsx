@@ -58,7 +58,7 @@ const VideoWithTestimonials = () => {
 
                 <div className="cont">
                   <h3 className="wow" data-splitting>
-                    So that&apos;s us. There&apos;s no other way to put it.
+                  Venha  <code>Nos conhecer!</code>
                   </h3>
                 </div>
               </div>
@@ -67,10 +67,10 @@ const VideoWithTestimonials = () => {
               <div className="testim-box">
                 <div className="head-box">
                   <h6 className="wow fadeIn" data-wow-delay=".5s">
-                    Our Clients
+                    Nossos clientes
                   </h6>
                   <h4 className="wow fadeInLeft" data-wow-delay=".5s">
-                    What Client&apos;s Say?
+                  O que diz sobre nos?
                   </h4>
                 </div>
                 <Slider
@@ -80,9 +80,7 @@ const VideoWithTestimonials = () => {
                 >
                   <div className="item">
                     <p>
-                      Nulla metus metus ullamcorper vel tincidunt sed euismod
-                      nibh volutpat velit class aptent taciti sociosqu ad
-                      litora.
+                        Empresa alto capacitada, caprichosos e criteriosos nos processos de criação e eficientes gostei muito recomendo!
                     </p>
                     <div className="info">
                       <div className="img">
@@ -93,10 +91,10 @@ const VideoWithTestimonials = () => {
                       <div className="cont">
                         <div className="author">
                           <h6 className="author-name custom-font">
-                            Alex Regelman
+                            Juliano Ferreira
                           </h6>
                           <span className="author-details">
-                            Co-founder, Colabrio
+                            Cozinha e marmitária
                           </span>
                         </div>
                       </div>
@@ -104,33 +102,7 @@ const VideoWithTestimonials = () => {
                   </div>
                   <div className="item">
                     <p>
-                      Nulla metus metus ullamcorper vel tincidunt sed euismod
-                      nibh volutpat velit class aptent taciti sociosqu ad
-                      litora.
-                    </p>
-                    <div className="info">
-                      <div className="img">
-                        <div className="img-box">
-                          <img src="/img/clients/2.jpg" alt="" />
-                        </div>
-                      </div>
-                      <div className="cont">
-                        <div className="author">
-                          <h6 className="author-name custom-font">
-                            Alex Regelman
-                          </h6>
-                          <span className="author-details">
-                            Co-founder, Colabrio
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <p>
-                      Nulla metus metus ullamcorper vel tincidunt sed euismod
-                      nibh volutpat velit class aptent taciti sociosqu ad
-                      litora.
+                      A up.expert e uma ecexlente agência! consultoria que nos ajudou muito.
                     </p>
                     <div className="info">
                       <div className="img">
@@ -141,10 +113,10 @@ const VideoWithTestimonials = () => {
                       <div className="cont">
                         <div className="author">
                           <h6 className="author-name custom-font">
-                            Alex Regelman
+                            Fabiana
                           </h6>
                           <span className="author-details">
-                            Co-founder, Colabrio
+                            Pizzaria Donas
                           </span>
                         </div>
                       </div>

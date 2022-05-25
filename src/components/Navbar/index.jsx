@@ -15,7 +15,7 @@ const Navbar = ({ lr, nr, theme }) => {
     handleSearch()
   }, [])
   return (
-   <nav
+    <nav
       ref={nr}
       className={`navbar navbar-expand-lg change ${
         theme === 'themeL' ? 'light' : ''
@@ -188,4 +188,3 @@ const Navbar = ({ lr, nr, theme }) => {
 }
 
 export default Navbar
-

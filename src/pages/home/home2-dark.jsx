@@ -9,6 +9,7 @@ import PortfolioCustomColumn from "../../components/Portfolio-custom-column";
 import Services03 from "../../components/Services03/services3";
 import SkillsCircle from "../../components/Skills-circle";
 import VideoWithTestimonials from "../../components/Video-with-testimonials";
+import Blogs4 from "../../components/blogs/Blogs4/blogs4";
 import DarkTheme from "../../layouts/Dark";
 
 const Homepage2 = () => {
@@ -16,7 +17,7 @@ const Homepage2 = () => {
   const logoRef = React.useRef(null);
 
   React.useEffect(() => {
-    const navbar = navbarRef.current;
+    var navbar = navbarRef.current;
     if (window.pageYOffset > 300) {
       navbar.classList.add("nav-scroll");
     } else {
@@ -30,6 +31,7 @@ const Homepage2 = () => {
       }
     });
   }, [navbarRef]);
+
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
@@ -40,6 +42,7 @@ const Homepage2 = () => {
       <SkillsCircle theme="dark" subBG />
       <PortfolioCustomColumn column={3} filterPosition="center" />
       <Clients1 theme="dark" subBG />
+      <Blogs4 />
       <CallToAction />
       <Footer />
     </DarkTheme>

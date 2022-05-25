@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import Image from 'next/image'
 import introData from '../../data/sections/Intro-with-horizontal.json'
@@ -55,7 +56,7 @@ const Intro4 = () => {
             }}
             onSwiper={(swiper) => {
               setTimeout(() => {
-                for (let i = 0; i < swiper.slides.length; i++) {
+                for (var i = 0; i < swiper.slides.length; i++) {
                   swiper.slides[i].childNodes[0].setAttribute(
                     'data-swiper-parallax',
                     0.75 * swiper.width

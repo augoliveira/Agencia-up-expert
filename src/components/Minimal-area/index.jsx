@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Image from "next/image";
 import featuresEffect from "../../common/featuresEffect";
 import { thumparallaxDown } from "../../common/thumparallax";
 import Split from "../Split";
@@ -17,10 +18,12 @@ const MinimalArea = () => {
         <div className="row">
           <div className="col-lg-6">
             <div className="img">
-              <img
+              <Image
                 className="thumparallax-down"
                 src="/img/min-area.jpg"
                 alt=""
+                width={800}
+                height={969}
               />
             </div>
           </div>
@@ -31,20 +34,19 @@ const MinimalArea = () => {
                   className="wow custom-font words chars splitting"
                   data-splitting
                 >
-                  About us.
+                  A Agência.
                 </h4>
               </Split>
 
               <Split>
                 <p className="wow txt words chars splitting" data-splitting>
-                  Our creative Ad agency is ranked among the finest in the US.
-                  We cultivate smart ideas for start-ups and seasoned players.
+                A <strong>Agência full service UP.EXPERT</strong> sempre trabalha para ficar por dentro das últimas tendências e melhores práticas para aplicar aos projetos de sua empresa.
                 </p>
               </Split>
               <ul className="feat">
                 <li className="wow fadeInUp" data-wow-delay=".2s">
                   <h6>
-                    <span>1</span> Our Mission
+                    <span>1</span> Nossa missão
                   </h6>
                   <p>
                     luctus massa ipsum at tempus eleifend congue lectus bibendum
@@ -52,7 +54,7 @@ const MinimalArea = () => {
                 </li>
                 <li className="wow fadeInUp" data-wow-delay=".4s">
                   <h6>
-                    <span>2</span> Our Goals
+                    <span>2</span> Nossos objetivos
                   </h6>
                   <p>
                     luctus massa ipsum at tempus eleifend congue lectus bibendum
@@ -60,7 +62,7 @@ const MinimalArea = () => {
                 </li>
                 <li className="wow fadeInUp" data-wow-delay=".6s">
                   <h6>
-                    <span>3</span> Why Us?
+                    <span>3</span> Por que nós?
                   </h6>
                   <p>
                     luctus massa ipsum at tempus eleifend congue lectus bibendum

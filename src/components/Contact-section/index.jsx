@@ -19,11 +19,11 @@ const ContactSection = () => {
       <div className="container">
         <div className="sec-head custom-font text-center">
           <h6 className="wow fadeIn" data-wow-delay=".5s">
-            Entrar em contato
+            Get In Touch
           </h6>
           <Split>
             <h3 className="wow words chars splitting" data-splitting>
-              Entre em contato conosco.
+              Contact Us.
             </h3>
           </Split>
           <span className="tbg">Contact</span>
@@ -33,9 +33,9 @@ const ContactSection = () => {
             <div className="form wow fadeInUp" data-wow-delay=".5s">
               <Formik
                 initialValues={{
-                  Nome: "",
-                  Email: "",
-                  Mensagem: "",
+                  name: "",
+                  email: "",
+                  message: "",
                 }}
                 onSubmit={async (values) => {
                   await sendMessage(500);
@@ -45,9 +45,9 @@ const ContactSection = () => {
                   messageRef.current.innerText =
                     "Your Message has been successfully sent. I will contact you soon.";
                   // Reset the values
-                  values.Nome = "";
-                  values.Email = "";
-                  values.Mensagem = "";
+                  values.name = "";
+                  values.email = "";
+                  values.message = "";
                   // clear message
                   setTimeout(() => {
                     messageRef.current.innerText = "";
@@ -81,8 +81,8 @@ const ContactSection = () => {
                               placeholder="Email"
                               required="required"
                             />
-                            {errors.Email && touched.email && (
-                              <div>{errors.Email}</div>
+                            {errors.email && touched.email && (
+                              <div>{errors.email}</div>
                             )}
                           </div>
                         </div>
@@ -104,7 +104,7 @@ const ContactSection = () => {
                               type="submit"
                               className="simple-btn custom-font cursor-pointer"
                             >
-                              <span>Enviar mensagem</span>
+                              <span>Send Message</span>
                             </button>
                           </div>
                         </div>

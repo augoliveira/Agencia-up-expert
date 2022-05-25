@@ -26,11 +26,11 @@ const PortfolioCustomColumn = ({
         <div className="container">
           <div className="sec-head custom-font">
             <h6 className="wow fadeIn" data-wow-delay=".5s">
-              Portfolio
+              Case
             </h6>
             <Split>
               <h3 className="wow words chars splitting" data-splitting>
-                Our Works.
+              Nossos trabalhos.
               </h3>
             </Split>
             <span className="tbg text-right">Portfolio</span>
@@ -52,11 +52,11 @@ const PortfolioCustomColumn = ({
             >
               <div className="filter">
                 <span data-filter="*" className="active">
-                  All
+                  Todos
                 </span>
                 <span data-filter=".brand">Branding</span>
                 <span data-filter=".web">Mobile App</span>
-                <span data-filter=".graphic">Creative</span>
+                <span data-filter=".graphic">Criativos</span>
               </div>
             </div>
           )}
