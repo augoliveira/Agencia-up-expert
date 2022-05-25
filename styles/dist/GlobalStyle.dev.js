@@ -1,0 +1,47 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _styledComponents = require("styled-components");
+
+var _variables = _interopRequireDefault(require("../styles/variables"));
+
+var _TransitionStyles = _interopRequireDefault(require("./TransitionStyles"));
+
+var _PrismStyles = _interopRequireDefault(require("./PrismStyles"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  ", ";\n\n  html {\n    box-sizing: border-box;\n    width: 100%;\n    scroll-behavior: smooth;\n  }\n\n  *,\n  *:before,\n  *:after {\n    box-sizing: inherit;\n  }\n\n  ::selection {\n    background-color: var(--lightest-navy);\n    color: var(--lightest-slate);\n  }\n\n  /* Provide basic, default focus styles.*/\n  :focus {\n    outline: 2px dashed var(--green);\n    outline-offset: 3px;\n  }\n\n  /*\n    Remove default focus styles for mouse users ONLY if\n    :focus-visible is supported on this platform.\n  */\n  :focus:not(:focus-visible) {\n    outline: none;\n    outline-offset: 0px;\n  }\n\n  /*\n    Optionally: If :focus-visible is supported on this\n    platform, provide enhanced focus styles for keyboard\n    focus.\n  */\n  :focus-visible {\n    outline: 2px dashed var(--green);\n    outline-offset: 3px;\n  }\n\n  /* Scrollbar Styles */\n  html {\n    scrollbar-width: thin;\n    scrollbar-color: var(--dark-slate) var(--navy);\n  }\n  body::-webkit-scrollbar {\n    width: 12px;\n  }\n  body::-webkit-scrollbar-track {\n    background: var(--navy);\n  }\n  body::-webkit-scrollbar-thumb {\n    background-color: var(--dark-slate);\n    border: 3px solid var(--navy);\n    border-radius: 10px;\n  }\n\n  body {\n    margin: 0;\n    width: 100%;\n    min-height: 100%;\n    overflow-x: hidden;\n    -moz-osx-font-smoothing: grayscale;\n    -webkit-font-smoothing: antialiased;\n    background-color: var(--navy);\n    color: var(--slate);\n    font-family: var(--font-sans);\n    font-size: var(--fz-xl);\n    line-height: 1.3;\n\n    @media (max-width: 480px) {\n      font-size: var(--fz-lg);\n    }\n\n    &.hidden {\n      overflow: hidden;\n    }\n\n    &.blur {\n      overflow: hidden;\n\n      header {\n        background-color: transparent;\n      }\n\n      #content > * {\n        filter: blur(5px) brightness(0.7);\n        transition: var(--transition);\n        pointer-events: none;\n        user-select: none;\n      }\n    }\n  }\n\n  #root {\n    min-height: 100vh;\n    display: grid;\n    grid-template-rows: 1fr auto;\n    grid-template-columns: 100%;\n  }\n\n  main {\n    margin: 0 auto;\n    width: 100%;\n    max-width: 1600px;\n    min-height: 100vh;\n    padding: 200px 150px;\n\n    @media (max-width: 1080px) {\n      padding: 200px 100px;\n    }\n    @media (max-width: 768px) {\n      padding: 150px 50px;\n    }\n    @media (max-width: 480px) {\n      padding: 125px 25px;\n    }\n\n    &.fillHeight {\n      padding: 0 150px;\n\n      @media (max-width: 1080px) {\n        padding: 0 100px;\n      }\n      @media (max-width: 768px) {\n        padding: 0 50px;\n      }\n      @media (max-width: 480px) {\n        padding: 0 25px;\n      }\n    }\n  }\n\n  section {\n    margin: 0 auto;\n    padding: 100px 0;\n    max-width: 1000vh;\n\n    @media (max-width: 768px) {\n      padding: 80px 0;\n    }\n\n    @media (max-width: 480px) {\n      padding: 60px 0;\n    }\n  }\n\n  h1,\n  h2,\n  h3,\n  h4,\n  h5,\n  h6 {\n    margin: 0 0 10px 0;\n    font-weight: 600;\n    color: var(--lightest-slate);\n    line-height: 1.1;\n  }\n\n  .big-heading {\n    margin: 0;\n    font-size: clamp(40px, 8vw, 80px);\n  }\n\n  .medium-heading {\n    margin: 0;\n    font-size: clamp(40px, 8vw, 60px);\n  }\n\n  .numbered-heading {\n    display: flex;\n    align-items: center;\n    position: relative;\n    margin: 10px 0 40px;\n    width: 100%;\n    font-size: clamp(26px, 5vw, var(--fz-heading));\n    white-space: nowrap;\n\n    &:before {\n      position: relative;\n      bottom: 4px;\n      counter-increment: section;\n      content: '0' counter(section) '.';\n      margin-right: 10px;\n      color: var(--green);\n      font-family: var(--font-mono);\n      font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));\n      font-weight: 400;\n\n      @media (max-width: 480px) {\n        margin-bottom: -3px;\n        margin-right: 5px;\n      }\n    }\n\n    &:after {\n      content: '';\n      display: block;\n      position: relative;\n      top: -5px;\n      width: 300px;\n      height: 1px;\n      margin-left: 20px;\n      background-color: var(--lightest-navy);\n\n      @media (max-width: 1080px) {\n        width: 200px;\n      }\n      @media (max-width: 768px) {\n        width: 100%;\n      }\n      @media (max-width: 600px) {\n        margin-left: 10px;\n      }\n    }\n  }\n\n  img,\n  svg,\n  .gatsby-image-wrapper {\n    width: 100%;\n    max-width: 100%;\n    vertical-align: middle;\n  }\n\n  img[alt=\"\"],\n  img:not([alt]) {\n    filter: blur(5px);\n  }\n\n  svg {\n    width: 100%;\n    height: 100%;\n    fill: currentColor;\n    vertical-align: middle;\n\n    &.feather {\n      fill: none;\n    }\n  }\n\n  a {\n    display: inline-block;\n    text-decoration: none;\n    text-decoration-skip-ink: auto;\n    color: inherit;\n    position: relative;\n    transition: var(--transition);\n\n    &:hover,\n    &:focus {\n      color: var(--green);\n    }\n\n    &.inline-link {\n      ", ";\n    }\n  }\n\n  button {\n    cursor: pointer;\n    border: 0;\n    border-radius: 0;\n  }\n\n  input, textarea {\n    border-radius: 0;\n    outline: 0;\n\n    &:focus {\n      outline: 0;\n    }\n    &:focus,\n    &:active {\n      &::placeholder {\n        opacity: 0.5;\n      }\n    }\n  }\n\n  p {\n    margin: 0 0 15px 0;\n\n    &:last-child,\n    &:last-of-type {\n      margin: 0;\n    }\n\n    & > a {\n      ", ";\n    }\n\n    & > code {\n      background-color: var(--light-navy);\n      color: var(--white);\n      font-size: var(--fz-sm);\n      border-radius: var(--border-radius);\n      padding: 0.3em 0.5em;\n    }\n  }\n\n  ul {\n    &.fancy-list {\n      padding: 0;\n      margin: 0;\n      list-style: none;\n      font-size: var(--fz-lg);\n      li {\n        position: relative;\n        padding-left: 30px;\n        margin-bottom: 10px;\n        &:before {\n          content: '\u25B9';\n          position: absolute;\n          left: 0;\n          color: var(--green);\n        }\n      }\n    }\n  }\n\n  blockquote {\n    border-left-color: var(--green);\n    border-left-style: solid;\n    border-left-width: 1px;\n    margin-left: 0px;\n    margin-right: 0px;\n    padding-left: 1.5rem;\n\n    p {\n      font-style: italic;\n      font-size: 24px;\n    }\n  }\n\n  hr {\n    background-color: var(--lightest-navy);\n    height: 1px;\n    border-width: 0px;\n    border-style: initial;\n    border-color: initial;\n    border-image: initial;\n    margin: 1rem;\n  }\n\n  code {\n    font-family: var(--font-mono);\n    font-size: var(--fz-md);\n  }\n\n  .skip-to-content {\n    ", ";\n    position: absolute;\n    top: auto;\n    left: -999px;\n    width: 1px;\n    height: 1px;\n    overflow: hidden;\n    z-index: -99;\n\n    &:focus,\n    &:active {\n      background-color: var(--green);\n      color: var(--navy);\n      top: 0;\n      left: 0;\n      width: auto;\n      height: auto;\n      overflow: auto;\n      z-index: 99;\n    }\n  }\n\n  #logo {\n    color: var(--green);\n  }\n\n  .overline {\n    color: var(--green);\n    font-family: var(--font-mono);\n    font-size: var(--fz-md);\n    font-weight: 400;\n  }\n\n  .subtitle {\n    color: var(--green);\n    margin: 0 0 20px 0;\n    font-size: var(--fz-md);\n    font-family: var(--font-mono);\n    font-weight: 400;\n    line-height: 1.5;\n    @media (max-width: 1080px) {\n      font-size: var(--fz-sm);\n    }\n    @media (max-width: 768px) {\n      font-size: var(--fz-xs);\n    }\n\n    a {\n      ", ";\n      line-height: 1.5;\n    }\n  }\n\n  .breadcrumb {\n    display: flex;\n    align-items: center;\n    margin-bottom: 50px;\n    color: var(--green);\n\n    .arrow {\n      display: block;\n      margin-right: 10px;\n      padding-top: 4px;\n    }\n\n    a {\n      ", ";\n      font-family: var(--font-mono);\n      font-size: var(--fz-sm);\n      font-weight: 600;\n      line-height: 1.5;\n      text-transform: uppercase;\n      letter-spacing: 0.1em;\n    }\n  }\n\n  .gatsby-image-outer-wrapper {\n    height: 100%;\n  }\n\n  ", ";\n\n  ", ";\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var GlobalStyle = (0, _styledComponents.createGlobalStyle)(_templateObject(), _variables["default"], function (_ref) {
+  var theme = _ref.theme;
+  return theme.mixins.inlineLink;
+}, function (_ref2) {
+  var theme = _ref2.theme;
+  return theme.mixins.inlineLink;
+}, function (_ref3) {
+  var theme = _ref3.theme;
+  return theme.mixins.button;
+}, function (_ref4) {
+  var theme = _ref4.theme;
+  return theme.mixins.inlineLink;
+}, function (_ref5) {
+  var theme = _ref5.theme;
+  return theme.mixins.inlineLink;
+}, _TransitionStyles["default"], _PrismStyles["default"]);
+var _default = GlobalStyle;
+exports["default"] = _default;
