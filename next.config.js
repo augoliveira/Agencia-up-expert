@@ -24,3 +24,8 @@ module.exports = {
     formats: ["image/avif", "image/webp"],
   },
   };
+  module.exports = {
+    experimental: {
+      nextScriptWorkers: true,
+    },
+  }
