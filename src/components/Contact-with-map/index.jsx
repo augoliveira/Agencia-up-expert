@@ -20,13 +20,13 @@ const ContactWithMap = () => {
           <div className="row">
             <div className="col-lg-6">
               <div className="form md-mb50">
-                <h4 className="extra-title mb-50">Get In Touch.</h4>
+                <h4 className="extra-title mb-50">Entrar em contato.</h4>
 
                 <Formik
                   initialValues={{
-                    name: "",
-                    email: "",
-                    message: "",
+                    Nome: "",
+                    Email: "",
+                    Mensagem: "",
                   }}
                   onSubmit={async (values) => {
                     await sendMessage(500);
@@ -34,11 +34,11 @@ const ContactWithMap = () => {
                     // show message
 
                     messageRef.current.innerText =
-                      "Your Message has been successfully sent. I will contact you soon.";
+                      "Sua mensagem foi enviada com sucesso. Entrarei em contato com você em breve.";
                     // Reset the values
-                    values.name = "";
-                    values.email = "";
-                    values.message = "";
+                    values.Nome = "";
+                    values.Email = "";
+                    values.Mensagem = "";
                     // clear message
                     setTimeout(() => {
                       messageRef.current.innerText = "";
@@ -69,8 +69,8 @@ const ContactWithMap = () => {
                             placeholder="Email"
                             required="required"
                           />
-                          {errors.email && touched.email && (
-                            <div>{errors.email}</div>
+                          {errors.Email && touched.Email && (
+                            <div>{errors.Email}</div>
                           )}
                         </div>
 
@@ -86,7 +86,7 @@ const ContactWithMap = () => {
                         </div>
 
                         <button type="submit" className="btn-curve btn-lit">
-                          <span>Send Message</span>
+                          <span>Enviar mensagem</span>
                         </button>
                       </div>
                     </Form>
@@ -96,24 +96,24 @@ const ContactWithMap = () => {
             </div>
             <div className="col-lg-5 offset-lg-1">
               <div className="cont-info">
-                <h4 className="extra-title mb-50">Contact Info.</h4>
+                <h4 className="extra-title mb-50">Informação de contato.</h4>
                 <h3 className="custom-font wow" data-splitting>
-                  Let&apos;s Talk.
+                Vamos conversar.
                 </h3>
                 <div className="item mb-40">
                   <h5>
-                    <a href="#0">Email@example.com</a>
+                    <a href="#0">contato@upexpert.com.br</a>
                   </h5>
-                  <h5>+4.930.705.5448</h5>
+                  <h5>(61) 9 8669-2775)</h5>
                 </div>
                 <h3 className="custom-font wow" data-splitting>
-                  Visit Us.
+                  Local.
                 </h3>
                 <div className="item">
                   <h6>
-                    295 Witting Streets Suite 666,
+                  BLOCO A - SHS QUADRA 6, SALA 501,
                     <br />
-                    Melbourne, Australia
+                    Asa sul, Brasilia-DF
                   </h6>
                 </div>
                 <div className="social mt-50">
@@ -137,7 +137,7 @@ const ContactWithMap = () => {
       </section>
       <div className="map" id="ieatmaps">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19868.687203718404!2d-0.14297520856388865!3d51.502466162777694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2seg!4v1644772966009!5m2!1sen!2seg"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.9015747563835!2d-47.89049398518106!3d-15.80914302752947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3b802b49f51d%3A0xfb4614fe89c36a4!2sAg%C3%AAncia%20full%20service%20up.expert!5e0!3m2!1sen!2sbr!4v1652962296060!5m2!1sen!2sbr"
           style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
@@ -147,10 +147,14 @@ const ContactWithMap = () => {
       <footer className="footer-half sub-bg">
         <div className="container">
           <div className="copyrights text-center mt-0">
-            <p>
-              © 2022, Avo Template. Made with passion by
-              <a href="#0">ThemesCamp</a>.
-            </p>
+          <p>
+                COPYRIGHT © 2022 UP EXPERT | DESENVOLVIDO POR |{' '}
+                <a href="https://upexpert.com.br/">
+                  {' '}
+                  Agência full service up.expert
+                </a>
+                .
+              </p>
           </div>
         </div>
       </footer>
