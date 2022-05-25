@@ -1,7 +1,7 @@
 import React from "react";
 import Image from 'next/image'
 import PageHeader from "../../components/Page-header";
-import Orcamento from "../../components/Orcamento";
+import Orcform from "../../components/Orc-form/index";
 import DarkTheme from "../../layouts/Dark";
 
 
@@ -22,7 +22,7 @@ const Contact = () => {
       />
       
       <section className="contact">
-        < Orcamento />
+        < Orcform />
       </section>
       </DarkTheme>
   );
