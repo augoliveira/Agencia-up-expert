@@ -11,7 +11,7 @@ export default function Home() {
   );
 }
 //!called every time  the page refreshed
-export const getServerSideProps: GetServerSideProps = async () => {
+export async function getStaticProps(context: any) {
   const deploymentURL = String(process.env.NEXT_PUBLIC_VERCEL_URL);
   // console.log(process.env.VERCEL_URL);
 
