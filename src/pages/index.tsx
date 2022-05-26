@@ -1,5 +1,7 @@
 import DarkTheme from "../layouts/Dark";
+import { GetServerSideProps } from 'next';
 import Demos from "./demos";
+
 
 export default function Home() {
   return (
@@ -9,7 +11,7 @@ export default function Home() {
   );
 }
 //!called every time  the page refreshed
-export async function getStaticProps() {
+export const getServerSideProps: GetServerSideProps = async () => {
   const deploymentURL = String(process.env.NEXT_PUBLIC_VERCEL_URL);
   // console.log(process.env.VERCEL_URL);
 

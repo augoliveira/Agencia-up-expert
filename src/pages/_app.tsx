@@ -1,5 +1,7 @@
 import { useState } from 'react'
-import {AppProps} from "next/app";
+import type { AppProps } from 'next/app';
+import { SWRConfig } from 'swr';
+import axios from '../serivces/httpService';
 import Head from "next/head";
 import Script from "next/script";
 import Cursor from "../components/Cursor";
@@ -20,6 +22,9 @@ function MyApp({ Component, pageProps }:AppProps) {
         <link rel="icon" href="/img/favicon.ico" />
         
       </Head>
+      <SWRConfig
+      value={{ fetcher: (url: string) => axios(url).then((r) => r.data) }}
+    >
       <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Cursor />
@@ -27,6 +32,7 @@ function MyApp({ Component, pageProps }:AppProps) {
       <ScrollToTop />
       <Component {...pageProps} />
       </ThemeProvider>
+      </SWRConfig>
       <Script id="wow" src="/js/wow.min.js" strategy="lazyOnload" />
       <Script
         strategy="beforeInteractive"
