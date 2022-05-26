@@ -16,13 +16,14 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@prisma/client": "^3.11.0",
     "@builder.io/partytown": "^0.6.0",
+    "@prisma/client": "^3.11.0",
     "axios": "^0.27.2",
     "eslint-plugin-jest": "^26.2.2",
     "formik": "^2.2.9",
     "jquery": "^3.6.0",
     "next": "^12.1.6",
+    "next-pwa": "^5.5.2",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^7.6.0",
     "prop-types": "^15.8.1",
