@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import {useState} from 'react'
 import type { AppProps } from 'next/app';
 import { SWRConfig } from 'swr';
 import axios from '../serivces/httpService';
@@ -7,7 +7,10 @@ import Script from "next/script";
 import Cursor from "../components/Cursor";
 import ScrollToTop from "../components/Scroll-to-top";
 import LoadingScreen from "../components/Loading-Screen";
-import "../styles/globals.css";
+import '../../public/css/dark.css'
+import '../../public/css/dark-vie.css'
+import '../../public/css/bootstrap.min.css'
+
 import GlobalStyle from "../styles/GlobalStyle";
 import theme from "../styles/theme";
 
@@ -20,6 +23,7 @@ function MyApp({ Component, pageProps }:AppProps) {
       <Head>
         <title>Agência de Marketing Digital: Full Service | up.Expert</title>
         <link rel="icon" href="/img/favicon.ico" />
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/3.0.0-alpha.1/css/ionicons.css" crossOrigin="anonymous" referrerPolicy="no-referrer" />
         
       </Head>
       <SWRConfig
@@ -52,6 +56,7 @@ function MyApp({ Component, pageProps }:AppProps) {
 <script>
 new WOW().init();
 </script>
+
 <Script
           data-partytown-config
           dangerouslySetInnerHTML={{

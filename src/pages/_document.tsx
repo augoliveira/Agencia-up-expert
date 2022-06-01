@@ -14,7 +14,8 @@ class MyDocument extends Document {
     return (
       <Html lang="Pt-BR">
         <Head>
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta charSet="utf-8"/>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
           <meta name="author" content="" />
           <meta name='application-name' content='PWA App' />
 <meta name='apple-mobile-web-app-capable' content='yes' />
@@ -38,8 +39,6 @@ class MyDocument extends Document {
 <link rel='manifest' href='/manifest.json' />
 <link rel='mask-icon' href='/icons/safari-pinned-tab.svg' color='#5bbad5' />
 <link rel='shortcut icon' href='/favicon.ico' />
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' />
-     
 <meta name='twitter:card' content='summary' />
 <meta name='twitter:url' content='https://yourdomain.com' />
 <meta name='twitter:title' content='PWA App' />
@@ -52,6 +51,7 @@ class MyDocument extends Document {
 <meta property='og:site_name' content='PWA App' />
 <meta property='og:url' content='https://yourdomain.com' />
 <meta property='og:image' content='https://yourdomain.com/icons/apple-touch-icon.png' />
+
 
 <link rel='apple-touch-icon' sizes='180x180' href='/icons/apple-touch-icon.png' />
           <link rel='manifest' href='/manifest.json' />
@@ -72,26 +72,7 @@ class MyDocument extends Document {
 
           <link rel="shortcut icon" href="/img/favicon.ico" />
           {/* Google Fonts */}
-          <link
-            href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700,800,900&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&display=swap"
-            rel="stylesheet"
-          />
+          
         </Head>
 
         <body>

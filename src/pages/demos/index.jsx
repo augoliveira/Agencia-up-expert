@@ -37,11 +37,11 @@ const Demos = () => {
         initIsotope();
       }, 1000);
       addParlx();
-      document.querySelector("body").style.backgroundColor = "#181b21";
+      document.querySelector("body").style.backgroundColor = "#121214";
     }
   }, [pageLoaded]);
   return (
-    <DarkTheme>
+    <>
       <style jsx>
         {`
           .masonery .item-img {
@@ -316,7 +316,7 @@ const Demos = () => {
           </div>
         </footer>
       </div>
-    </DarkTheme>
+    </>
   );
 };
 

@@ -1181,6 +1181,16 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@icon/ionicons@^5.4.0-alpha.0":
+  version "5.4.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@icon/ionicons/-/ionicons-5.4.0-alpha.0.tgz#db9b9899e05471a6beb71e74beb7bffa01b2898d"
+  integrity sha512-AS1BqaqxMvAHqX+gQsviNP8mmsYO2Levl+b2JRLU28G+b0E78dJ6ZFNoU3WWsGyXklruM5oE0Vf0shyNIjfY7w==
+
+"@icon/stroke-7@^1.2.0-alpha.3":
+  version "1.2.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/@icon/stroke-7/-/stroke-7-1.2.0-alpha.3.tgz#1d3bda4f9755dc7950644eef9eb214a5f2d3c6f4"
+  integrity sha512-WAV7q/JYuoZOs+U2xLhNN6izJrhfTx72sEBxBwvrRs2QPYB0UwBnMTSD7XSBOA99XDB5zIJIboQ9vL4scfHqGg==
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.npmjs.org/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz"
@@ -1522,7 +1532,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@prisma/client@^3.11.0":
+"@prisma/client@^3.14.0":
   version "3.14.0"
   resolved "https://registry.yarnpkg.com/@prisma/client/-/client-3.14.0.tgz#bb90405c012fcca11f4647d91153ed4c58f3bd48"
   integrity sha512-atb41UpgTR1MCst0VIbiHTMw8lmXnwUvE1KyUCAkq08+wJyjRE78Due+nSf+7uwqQn+fBFYVmoojtinhlLOSaA==
@@ -1595,6 +1605,11 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
+"@stencil/core@~2.12.0":
+  version "2.12.1"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.12.1.tgz#92364d3e57337b8d36dd9b70cfbed2833929f22d"
+  integrity sha512-u24TZ+FEvjnZt5ZgIkLjLpUNsO6Ml3mUZqwmqk81w6RWWz75hgB5p4RFI5rvuErFeh2xvMIGo+pNdG24XUBz1A==
+
 "@surma/rollup-plugin-off-main-thread@^2.2.3":
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@surma/rollup-plugin-off-main-thread/-/rollup-plugin-off-main-thread-2.2.3.tgz#ee34985952ca21558ab0d952f00298ad2190c053"
@@ -1643,10 +1658,10 @@
     "@testing-library/dom" "^8.0.0"
     "@types/react-dom" "<18.0.0"
 
-"@testing-library/react@^13.2.0":
-  version "13.2.0"
-  resolved "https://registry.npmjs.org/@testing-library/react/-/react-13.2.0.tgz"
-  integrity sha512-Bprbz/SZVONCJy5f7hcihNCv313IJXdYiv0nSJklIs1SQCIHHNlnGNkosSXnGZTmesyGIcBGNppYhXcc11pb7g==
+"@testing-library/react@^13.3.0":
+  version "13.3.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/react/-/react-13.3.0.tgz#bf298bfbc5589326bbcc8052b211f3bb097a97c5"
+  integrity sha512-DB79aA426+deFgGSjnf5grczDPiL4taK3hFaa+M5q7q20Kcve9eQottOG5kZ74KEr55v0tU2CQormSSDK87zYQ==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^8.5.0"
@@ -3980,10 +3995,10 @@ eslint-plugin-import@^2.26.0:
     resolve "^1.22.0"
     tsconfig-paths "^3.14.1"
 
-eslint-plugin-jest@^26.2.2:
-  version "26.2.2"
-  resolved "https://registry.npmjs.org/eslint-plugin-jest/-/eslint-plugin-jest-26.2.2.tgz"
-  integrity sha512-etSFZ8VIFX470aA6kTqDPhIq7YWe0tjBcboFNV3WeiC18PJ/AVonGhuTwlmuz2fBkH8FJHA7JQ4k7GsQIj1Gew==
+eslint-plugin-jest@^26.4.2:
+  version "26.4.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-26.4.2.tgz#2b7d40006718b79718738fcd28fec72a8dddd91f"
+  integrity sha512-0g7bl2j1zS58qIzSQmx1RABjiWgVKWSMRgr2bEUymyYNf5NX9TQqprvdmVbZh/3gfnmOrkQtZSIc1R4XKQGppA==
   dependencies:
     "@typescript-eslint/utils" "^5.10.0"
 
@@ -5001,6 +5016,13 @@ internal-slot@^1.0.3:
     get-intrinsic "^1.1.0"
     has "^1.0.3"
     side-channel "^1.0.4"
+
+ionicons@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-6.0.1.tgz#e7dc8c9d6d6cff33f3c64c095b5df645fbedd917"
+  integrity sha512-xQekOJsxH82O7oB+3F60zeRggCdND9pJ/k0E6IJDVUGGlCj5mlyFqNgxUimytKgstPGv3S+3EmCxjefvtGgWUg==
+  dependencies:
+    "@stencil/core" "~2.12.0"
 
 is-accessor-descriptor@^0.1.6:
   version "0.1.6"
