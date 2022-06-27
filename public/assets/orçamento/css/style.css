@@ -27,17 +27,7 @@ font-family: 'Julietta'
 	color:#fff;
 }
 
-@font-face {
-    font-family: 'Julietta';
-    src: url('../../fonts/Julietta.eot');
-    src: url('../../fonts/Julietta.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/Julietta.woff2') format('woff2'),
-         url('../../fonts/Julietta.woff') format('woff'),
-         url('../../fonts/Julietta.ttf') format('truetype'),
-         url('../../fonts/Julietta.svg#Julietta') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 a {
 	cursor:pointer;
@@ -76,20 +66,10 @@ body {
 #pecas, #site, #blog, #loja, #redes, #cd-dvd, #p2 .next, br.adjust-frequency,
 #p3 .next, #p4 .next { display: none; }
 
-@font-face {
-    font-family: 'Julietta';
-    src: url('../../../fonts/Julietta.eot');
-    src: url('../../../fonts/Julietta.eot?#iefix') format('embedded-opentype'),
-         url('../../../fonts/Julietta.woff2') format('woff2'),
-         url('../../../fonts/Julietta.woff') format('woff'),
-         url('../../../fonts/Julietta.ttf') format('truetype'),
-         url('../../../fonts/Julietta.svg#Julietta') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 #m-contato #close-contato {
-	background: url(../../../img/assets/close.png) no-repeat;
+	background: url(../../img/assets/close.png) no-repeat;
 	cursor: pointer;
 	height: 36px;
 	position: absolute;
@@ -109,9 +89,9 @@ textarea { resize: none; }
 
 aside {
 	background-color: #0f1015;
-	background-image: url(../img/x.png),
-					  url(../img/forma.png),
-					  url(../img/pontos.png);
+	background-image: url(/public/assets/img/x.png),
+					  url(/public/assets/img/forma.png),
+					  url(/public/assets/img/pontos.png);
 	background-position: 90% 66px, bottom, center;
 	background-repeat: no-repeat, no-repeat, repeat-y;
 	color: #fff;
@@ -150,7 +130,7 @@ aside nav#menu ul li .topic {
 }
 
 aside nav#menu ul li.active {
-	background: url(../img/pointer.png) center right no-repeat;
+	background: url(/public/assets/img/pointer.png) center right no-repeat;
 	color: #fff;
 }
 

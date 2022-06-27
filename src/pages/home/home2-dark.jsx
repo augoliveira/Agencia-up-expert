@@ -5,7 +5,7 @@ import Clients1 from "../../components/Clients1";
 import Footer from "../../components/Footer";
 import Intro4 from "../../components/Intro4";
 import Navbar from "../../components/Navbar";
-import PortfolioCustomColumn from "../../components/Portfolio-custom-column";
+import Works from "../../components/Works/works";
 import Services03 from "../../components/Services03/services3";
 import SkillsCircle from "../../components/Skills-circle";
 import VideoWithTestimonials from "../../components/Video-with-testimonials";
@@ -40,7 +40,7 @@ const Homepage2 = () => {
       <Services03 />
       <VideoWithTestimonials />
       <SkillsCircle theme="dark" subBG />
-      <PortfolioCustomColumn column={3} filterPosition="center" />
+      <Works />
       <Clients1 theme="dark" subBG />
       <Blogs4 />
       <CallToAction />

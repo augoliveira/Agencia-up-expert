@@ -8,7 +8,8 @@ import addParlx from "../../common/addParlx";
 import Services03 from '../../components/Services03/services3'
 import ShowcasesOneCenter from '../../components/Showcases-one-center/index'
 import initIsotope from "../../common/initIsotope";
-import bg from "../../../public/img/demos/bg-slide.jpg";
+import bg from "../../../public/img/demos/bg-slide2.jpg";
+import bg1 from "../../../public/img/businesswoman.jpg";
 import Typewriter from "typewriter-effect";
 
 const Demos = () => {
@@ -96,7 +97,7 @@ const Demos = () => {
             color: #181b21;
             margin-left: 5px;
           }
-
+          
           .masonery .item-img .new {
             padding: 10px 30px;
             background: #75dab4;
@@ -132,7 +133,7 @@ const Demos = () => {
                   >
                     <font
                       className="klickart-font"
-                      style={{ color: `#8257e5; };` }}
+                      style={{ color: `#251867; };` }}
                     >
                       <b className="medium-b">O que a </b>
                       <font
@@ -199,7 +200,7 @@ const Demos = () => {
 
         <section
           className="masonery section-padding pb-70"
-          style={{ background: "#181b21" }}
+          style={{ backgroundImage: "url(/assets/img/line-pattern1.png" }}
         >
           <div className="container-fluid">
             <div className="sec-head custom-font text-center">
@@ -215,7 +216,15 @@ const Demos = () => {
             </section>
           </div>
         </section>
-        <section className="services bords lficon section-padding position-re">
+        <section className="services bords lficon section-padding position-re" data-overlay-dark="4"
+        >
+          <div className={'image-container'}>
+          <Image src={bg1.src} 
+          layout="fill"
+          width={1920}
+          height={550}
+          alt={'image'} />
+        </div>
           <div className="container">
             <div className="row justify-content-center">
             <div className="container-fluid">
@@ -238,12 +247,11 @@ const Demos = () => {
                   <div className="cont">
                     <h3>UI/UX Design</h3>
                     <p>
-                      Nosso processo de design é baseado em metodologias
+                      Design baseado em metodologias
                       centradas no usuário, com iterações incrementais e
                       entregas contínuas, para garantir que as interfaces
                       funcionais sejam elaboradas com um alto nível de detalhe,
-                      resultando em produtos com uma excelente experiência do
-                      usuário.
+                      resultando em produtos com uma excelente experiência.
                     </p>
                   </div>
                 </div>

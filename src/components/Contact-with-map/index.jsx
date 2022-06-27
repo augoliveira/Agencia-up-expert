@@ -140,7 +140,8 @@ const ContactWithMap = () => {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.9015747563835!2d-47.89049398518106!3d-15.80914302752947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3b802b49f51d%3A0xfb4614fe89c36a4!2sAg%C3%AAncia%20full%20service%20up.expert!5e0!3m2!1sen!2sbr!4v1652962296060!5m2!1sen!2sbr"
           style={{ border: 0 }}
           allowFullScreen=""
-          loading="lazy"
+          loading="lazy"  
+          width="1920" height="600"
         ></iframe>
       </div>
 

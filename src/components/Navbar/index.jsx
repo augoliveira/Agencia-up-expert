@@ -30,16 +30,16 @@ const Navbar = ({ lr, nr, theme }) => {
                   ref={lr}
                   src={`${appData.darkLogo}`}
                   alt="logo"
-                  width={200}
-                  height={52}
+                  width={100}
+                  height={30}
                 />
               ) : (
-                <Image ref={lr} src={`${appData.lightLogo}`} alt="logo" width={200}
-                height={52}/>
+                <Image ref={lr} src={`${appData.lightLogo}`} alt="logo" width={100}
+                height={30}/>
               )
             ) : (
-              <Image ref={lr} src={`${appData.lightLogo}`} alt="logo" width={200}
-              height={52}/>
+              <Image ref={lr} src={`${appData.lightLogo}`} alt="logo" width={100}
+              height={30}/>
             )}
           </a>
         </Link>

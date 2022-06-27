@@ -36,7 +36,7 @@ const Contact = () => {
       <Navbar nr={navbarRef} />
       <ContactHeader sliderRef={fixedHeader} />
       <div className="main-content" ref={MainContent}>
-        <ContactWithMap />
+      <ContactWithMap />
       </div>
     </DarkTheme>
   );
