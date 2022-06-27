@@ -9,8 +9,7 @@ import Services03 from '../../components/Services03/services3'
 import ShowcasesOneCenter from '../../components/Showcases-one-center/index'
 import initIsotope from "../../common/initIsotope";
 import Typewriter from "typewriter-effect";
-import background from "../../../public/img/businesswoman.jpg";
-import BG from "../../../public/img/demos/bg-slide2.jpg";
+
 
 
 const Demos = () => {
@@ -119,11 +118,11 @@ const Demos = () => {
       >
         <div className={'image-container'}>
         <Image
-          width={2746}  //use the width of the image being used
-          height={4681} //use the height of the image being used
-          layout="fill"
+         layout="fill"
+         width={2079}
+         height={969}
           alt="water_portrait"
-          src={BG} //image saved in public/home
+          src="/img/demos/bg-slide2.jpg" //image saved in public/home
         />
         </div>
   
@@ -224,7 +223,7 @@ const Demos = () => {
         <section className="services bords lficon section-padding position-re" data-overlay-dark="4"
         >
           <div className={'image-container'}>
-          <Image src={background} 
+          <Image src="/img/businesswoman.jpg" 
             alt="srv-img6-3.jpg"
             itemprop="image"
             layout="fill"

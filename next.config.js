@@ -1,23 +1,27 @@
-const path = require("path");
+const withSass = require('@zeit/next-sass')
+const withCSS = require("@zeit/next-css");
+module.exports = withCSS(withSass({
+    webpack(config, options) {
+        config.module.rules.push({
+            test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+            use: {
+                loader: 'url-loader',
+                options: {
+                    limit: 100000
+                }
+            }
+        });
 
-module.exports = {
-  reactStrictMode: true,
-  sassOptions: {
-    includePaths: [path.join(__dirname, "css")],
-  },
-  trailingSlash: true,
-  devIndicators: {
-    buildActivity: false,
-  },
-  eslint: {
-    ignoreDuringBuilds: false,
-  },
-  swcMinify: true,
-};
+        return config;
+    }
+}));
 module.exports = {
   experimental: {
     outputStandalone: true,
   },
+};
+module.exports = {
+  swcMinify: true,
 };
 module.exports = {
   images: {
