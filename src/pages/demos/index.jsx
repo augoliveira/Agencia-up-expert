@@ -114,18 +114,10 @@ const Demos = () => {
       <header
         ref={fixedHeader}
         className="works-header fixed-slider hfixd valign bg-img"
-        data-overlay-dark="4" 
+        style={{ backgroundImage: "url(/img/demos/bg-slide2.jpg)" }}
+        data-overlay-dark="4"
       >
-        <div className={'image-container'}/>
-        <Image
-         layout="fill"
-         objectFit="cover"
-         quality={100}
-          alt="water_portrait"
-          src="/img/demos/bg-slide2.jpg" //image saved in public/home
-        />
-        
-  
+
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-9 col-md-11 static">
