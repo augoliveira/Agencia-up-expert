@@ -7,9 +7,8 @@ import Script from "next/script";
 import Cursor from "../components/Cursor";
 import ScrollToTop from "../components/Scroll-to-top";
 import LoadingScreen from "../components/Loading-Screen";
-import '../../public/css/dark.css'
-import '../../public/css/dark-vie.css'
-import '../../public/assets/orçamento/css/style.css'
+
+
 
 
 import GlobalStyle from "../styles/GlobalStyle";

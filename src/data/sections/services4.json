@@ -1,20 +1,20 @@
 [
   {
     "id": 1,
-    "title": "Digital Marketing",
+    "title": "Identidade da marca",
     "icon": "pe-7s-gleam",
-    "content": "Tempore corrupti temporibus fuga earum asperiores fugit laudantium."
+    "content": "Reunimos as pessoas certas para desafiar."
   },
   {
     "id": 2,
-    "title": "Web & App Development",
+    "title": "Interface Web.",
     "icon": "pe-7s-phone",
-    "content": "Tempore corrupti temporibus fuga earum asperiores fugit laudantium."
+    "content": "Criamos o design de website, hotsite, loja online, aplicativo, sistema..."
   },
   {
     "id": 3,
-    "title": "Graphic Design",
+    "title": "Design Gráfico.",
     "icon": "pe-7s-magic-wand",
-    "content": "Tempore corrupti temporibus fuga earum asperiores fugit laudantium."
+    "content": "Folder, flyer, cartão de visita, pasta, papel timbrado, outdoor, painel."
   }
 ]

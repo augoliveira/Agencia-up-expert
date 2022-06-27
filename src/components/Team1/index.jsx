@@ -35,9 +35,14 @@ class Team1 extends React.Component {
             <div className="col-lg-4 valign">
               <div className="full-width">
                 <div className="sec-head custom-font mb-0">
-                  <h6>Employees</h6>
-                  <h3>Our Team.</h3>
+                  <h6>NOSSA EQUIPE</h6>
                 </div>
+                <h3 className="co-tit mb-15">
+                Ajudamos a criar estratégias visuais.
+              </h3>
+              <p>
+              Nós somos <code>up.expert</code> Criamos sites premiados, marcas notáveis ​​e aplicativos de ponta.
+              </p>
                 {this.renderArrows()}
               </div>
             </div>

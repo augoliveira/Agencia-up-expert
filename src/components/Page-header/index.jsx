@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import Image from 'next/image'
 import { useRouter } from "next/router";
-import nextjsDark from '../../../public/assets/img/pg2.jpg'
 
 const PageHeader = ({ title, fullPath, image }) => {
   const router = useRouter();

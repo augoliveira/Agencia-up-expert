@@ -8,9 +8,8 @@ import addParlx from "../../common/addParlx";
 import Services03 from '../../components/Services03/services3'
 import ShowcasesOneCenter from '../../components/Showcases-one-center/index'
 import initIsotope from "../../common/initIsotope";
-import bg from "../../../public/img/demos/bg-slide2.jpg";
-import bg1 from "../../../public/img/businesswoman.jpg";
 import Typewriter from "typewriter-effect";
+
 
 const Demos = () => {
   const fixedHeader = React.useRef(null);
@@ -42,7 +41,7 @@ const Demos = () => {
     }
   }, [pageLoaded]);
   return (
-    <>
+    <DarkTheme>
       <style jsx>
         {`
           .masonery .item-img {
@@ -124,7 +123,6 @@ const Demos = () => {
             objectFit="cover"
             quality={100}/>
         </div>
-        
   
         <div className="container">
           <div className="row justify-content-center">
@@ -328,7 +326,7 @@ const Demos = () => {
           </div>
         </footer>
       </div>
-    </>
+      </DarkTheme>
   );
 };
 
