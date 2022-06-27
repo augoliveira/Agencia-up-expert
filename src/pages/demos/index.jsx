@@ -9,6 +9,8 @@ import Services03 from '../../components/Services03/services3'
 import ShowcasesOneCenter from '../../components/Showcases-one-center/index'
 import initIsotope from "../../common/initIsotope";
 import Typewriter from "typewriter-effect";
+import background from "../../../public/img/businesswoman.jpg";
+import BG from "../../../public/img/demos/bg-slide2.jpg";
 
 
 const Demos = () => {
@@ -117,11 +119,12 @@ const Demos = () => {
       >
         <div className={'image-container'}>
         <Image
-          src="/img/demos/bg-slide2.jpg"
-          alt="alt"
+          width={2746}  //use the width of the image being used
+          height={4681} //use the height of the image being used
           layout="fill"
-            objectFit="cover"
-            quality={100}/>
+          alt="water_portrait"
+          src={BG} //image saved in public/home
+        />
         </div>
   
         <div className="container">
@@ -221,11 +224,12 @@ const Demos = () => {
         <section className="services bords lficon section-padding position-re" data-overlay-dark="4"
         >
           <div className={'image-container'}>
-          <Image src="../../../public/img/businesswoman.jpg" 
-          layout="fill"
-          width={1920}
-          height={600}
-          alt={'image'} />
+          <Image src={background} 
+            alt="srv-img6-3.jpg"
+            itemprop="image"
+            layout="fill"
+            loading="lazy" 
+            />
         </div>
           <div className="container">
             <div className="row justify-content-center">
