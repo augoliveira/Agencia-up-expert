@@ -116,15 +116,15 @@ const Demos = () => {
         className="works-header fixed-slider hfixd valign bg-img"
         data-overlay-dark="4" 
       >
-        <div className={'image-container'}>
+        <div className={'image-container'}/>
         <Image
          layout="fill"
-         width={2079}
-         height={969}
+         objectFit="cover"
+         quality={100}
           alt="water_portrait"
           src="/img/demos/bg-slide2.jpg" //image saved in public/home
         />
-        </div>
+        
   
         <div className="container">
           <div className="row justify-content-center">
