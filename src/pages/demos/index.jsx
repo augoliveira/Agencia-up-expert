@@ -117,10 +117,14 @@ const Demos = () => {
         data-overlay-dark="4" 
       >
         <div className={'image-container'}>
-          <Image src={bg.src} layout="fill"
-          objectFit="cover"
-          quality={100} alt={'image'} />
+        <Image
+          src="/img/demos/bg-slide2.jpg"
+          alt="alt"
+          layout="fill"
+            objectFit="cover"
+            quality={100}/>
         </div>
+        
   
         <div className="container">
           <div className="row justify-content-center">
@@ -219,10 +223,10 @@ const Demos = () => {
         <section className="services bords lficon section-padding position-re" data-overlay-dark="4"
         >
           <div className={'image-container'}>
-          <Image src={bg1.src} 
+          <Image src="/img/businesswoman.jpg" 
           layout="fill"
           width={1920}
-          height={550}
+          height={600}
           alt={'image'} />
         </div>
           <div className="container">
