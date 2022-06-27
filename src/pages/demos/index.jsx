@@ -221,7 +221,7 @@ const Demos = () => {
         <section className="services bords lficon section-padding position-re" data-overlay-dark="4"
         >
           <div className={'image-container'}>
-          <Image src="/img/businesswoman.jpg" 
+          <Image src="../../../public/img/businesswoman.jpg" 
           layout="fill"
           width={1920}
           height={600}
